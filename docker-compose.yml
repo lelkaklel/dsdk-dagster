@@ -7,25 +7,9 @@ services:
     ports: 
       - "3000:3000"
     volumes:
-      - "./dagster_home:/opt/dagster/dagster_home"
       - "./logs:/var/logs/dagster"
       - "./pipelines:/opt/dagster/pipelines"
     networks:
       - dagster
-
-  postgres:
-    image: postgres:11
-    container_name: postgres
-    volumes:
-      - "./utils/docker-postgresql-multiple-databases:/docker-entrypoint-initdb.d"
-    ports:
-      - "5432:5432"
-    environment:
-      POSTGRES_PASSWORD: "test"
-      POSTGRES_USER: "test"
-      POSTGRES_MULTIPLE_DATABASES: "test_run_storage,test_event_log_storage,test_schedule_storage"
-    networks:
-      - dagster
-
 networks:
   dagster:
