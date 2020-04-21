@@ -1,0 +1,14 @@
+2020-04-20 19:22:21 - dagster - DEBUG - complex_pipeline - 2da4ff3b-f10f-414a-b4b1-8aebed6db4ae - STEP_START - Started execution of step "load_cereals.compute".
+               solid = "load_cereals"
+    solid_definition = "load_cereals"
+            step_key = "load_cereals.compute"
+2020-04-20 19:22:21 - dagster - DEBUG - complex_pipeline - 2da4ff3b-f10f-414a-b4b1-8aebed6db4ae - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+ event_specific_data = {"intermediate_materialization": null, "step_output_handle": ["load_cereals.compute", "result"], "type_check_data": [true, "result", null, []]}
+               solid = "load_cereals"
+    solid_definition = "load_cereals"
+            step_key = "load_cereals.compute"
+2020-04-20 19:22:21 - dagster - DEBUG - complex_pipeline - 2da4ff3b-f10f-414a-b4b1-8aebed6db4ae - STEP_SUCCESS - Finished execution of step "load_cereals.compute" in 9.04ms.
+ event_specific_data = {"duration_ms": 9.036845003720373}
+               solid = "load_cereals"
+    solid_definition = "load_cereals"
+            step_key = "load_cereals.compute"

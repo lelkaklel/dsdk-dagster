@@ -1,0 +1,19 @@
+2020-04-21 17:22:18 - dagster - DEBUG - complex_pipeline - 403a71d0-d37a-4aed-98d2-b4a64774dc5b - STEP_START - Started execution of step "sort_by_protein.compute".
+               solid = "sort_by_protein"
+    solid_definition = "sort_by_protein"
+            step_key = "sort_by_protein.compute"
+2020-04-21 17:22:18 - dagster - DEBUG - complex_pipeline - 403a71d0-d37a-4aed-98d2-b4a64774dc5b - STEP_INPUT - Got input "cereals" of type "Any". (Type check passed).
+ event_specific_data = {"input_name": "cereals", "type_check_data": [true, "cereals", null, []]}
+               solid = "sort_by_protein"
+    solid_definition = "sort_by_protein"
+            step_key = "sort_by_protein.compute"
+2020-04-21 17:22:18 - dagster - DEBUG - complex_pipeline - 403a71d0-d37a-4aed-98d2-b4a64774dc5b - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+ event_specific_data = {"intermediate_materialization": null, "step_output_handle": ["sort_by_protein.compute", "result"], "type_check_data": [true, "result", null, []]}
+               solid = "sort_by_protein"
+    solid_definition = "sort_by_protein"
+            step_key = "sort_by_protein.compute"
+2020-04-21 17:22:18 - dagster - DEBUG - complex_pipeline - 403a71d0-d37a-4aed-98d2-b4a64774dc5b - STEP_SUCCESS - Finished execution of step "sort_by_protein.compute" in 8.92ms.
+ event_specific_data = {"duration_ms": 8.921782000470557}
+               solid = "sort_by_protein"
+    solid_definition = "sort_by_protein"
+            step_key = "sort_by_protein.compute"

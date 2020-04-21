@@ -1,0 +1,40 @@
+2020-04-20 19:22:25 - dagster - DEBUG - complex_pipeline - ddb1845b-5d7a-4de6-805c-40bb3a45c8dc - STEP_START - Started execution of step "display_results.compute".
+               solid = "display_results"
+    solid_definition = "display_results"
+            step_key = "display_results.compute"
+2020-04-20 19:22:25 - dagster - DEBUG - complex_pipeline - ddb1845b-5d7a-4de6-805c-40bb3a45c8dc - STEP_INPUT - Got input "calorie_results" of type "Any". (Type check passed).
+ event_specific_data = {"input_name": "calorie_results", "type_check_data": [true, "calorie_results", null, []]}
+               solid = "display_results"
+    solid_definition = "display_results"
+            step_key = "display_results.compute"
+2020-04-20 19:22:25 - dagster - DEBUG - complex_pipeline - ddb1845b-5d7a-4de6-805c-40bb3a45c8dc - STEP_INPUT - Got input "protein_results" of type "Any". (Type check passed).
+ event_specific_data = {"input_name": "protein_results", "type_check_data": [true, "protein_results", null, []]}
+               solid = "display_results"
+    solid_definition = "display_results"
+            step_key = "display_results.compute"
+2020-04-20 19:22:25 - dagster - INFO - system - ddb1845b-5d7a-4de6-805c-40bb3a45c8dc - Least caloric cereal: Corn Flakes
+               solid = "display_results"
+    solid_definition = "display_results"
+            step_key = "display_results.compute"
+2020-04-20 19:22:25 - dagster - INFO - system - ddb1845b-5d7a-4de6-805c-40bb3a45c8dc - Most caloric cereal: Strawberry Fruit Wheats
+               solid = "display_results"
+    solid_definition = "display_results"
+            step_key = "display_results.compute"
+2020-04-20 19:22:25 - dagster - INFO - system - ddb1845b-5d7a-4de6-805c-40bb3a45c8dc - Least protein-rich cereal: Cap'n'Crunch
+               solid = "display_results"
+    solid_definition = "display_results"
+            step_key = "display_results.compute"
+2020-04-20 19:22:25 - dagster - INFO - system - ddb1845b-5d7a-4de6-805c-40bb3a45c8dc - Most protein-rich cereal: Special K
+               solid = "display_results"
+    solid_definition = "display_results"
+            step_key = "display_results.compute"
+2020-04-20 19:22:25 - dagster - DEBUG - complex_pipeline - ddb1845b-5d7a-4de6-805c-40bb3a45c8dc - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+ event_specific_data = {"intermediate_materialization": null, "step_output_handle": ["display_results.compute", "result"], "type_check_data": [true, "result", null, []]}
+               solid = "display_results"
+    solid_definition = "display_results"
+            step_key = "display_results.compute"
+2020-04-20 19:22:25 - dagster - DEBUG - complex_pipeline - ddb1845b-5d7a-4de6-805c-40bb3a45c8dc - STEP_SUCCESS - Finished execution of step "display_results.compute" in 34ms.
+ event_specific_data = {"duration_ms": 34.925106971058995}
+               solid = "display_results"
+    solid_definition = "display_results"
+            step_key = "display_results.compute"

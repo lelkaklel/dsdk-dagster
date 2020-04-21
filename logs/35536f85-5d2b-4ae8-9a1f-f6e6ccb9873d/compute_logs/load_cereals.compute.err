@@ -1,0 +1,26 @@
+2020-04-20 22:00:10 - dagster - DEBUG - complex_pipeline - 35536f85-5d2b-4ae8-9a1f-f6e6ccb9873d - STEP_START - Started execution of step "load_cereals.compute".
+               solid = "load_cereals"
+    solid_definition = "load_cereals"
+            step_key = "load_cereals.compute"
+2020-04-20 22:00:10 - dagster - ERROR - complex_pipeline - 35536f85-5d2b-4ae8-9a1f-f6e6ccb9873d - STEP_FAILURE - Execution of step "load_cereals.compute" failed.
+            cls_name = "FileNotFoundError"
+       error_message = "FileNotFoundError: [Errno 2] No such file or directory: 'cereal.csv'\n"
+               solid = "load_cereals"
+    solid_definition = "load_cereals"
+            step_key = "load_cereals.compute"
+
+FileNotFoundError: [Errno 2] No such file or directory: 'cereal.csv'
+
+  File "/usr/local/lib/python3.7/site-packages/dagster/core/errors.py", line 174, in user_code_error_boundary
+    yield
+  File "/usr/local/lib/python3.7/site-packages/dagster/core/execution/plan/execute.py", line 689, in _user_event_sequence_for_step_compute_fn
+    for event in gen:
+  File "/usr/local/lib/python3.7/site-packages/dagster/core/execution/plan/compute.py", line 93, in _execute_core_compute
+    for step_output in _yield_compute_results(compute_context, inputs, compute_fn):
+  File "/usr/local/lib/python3.7/site-packages/dagster/core/execution/plan/compute.py", line 64, in _yield_compute_results
+    for event in user_event_sequence:
+  File "/usr/local/lib/python3.7/site-packages/dagster/core/definitions/decorators.py", line 421, in compute
+    result = fn(context, **kwargs)
+  File "/opt/dagster/pipelines/dagster_examples/complex_pipeline.py", line 9, in load_cereals
+    with open(dataset_path, 'r') as fd:
+

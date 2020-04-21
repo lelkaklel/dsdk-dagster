@@ -1,0 +1,26 @@
+2020-04-20 22:09:32 - dagster - DEBUG - complex_pipeline - 90acc7f4-86db-4ebe-b34c-0ac54cc510a7 - STEP_START - Started execution of step "load_cereals.compute".
+               solid = "load_cereals"
+    solid_definition = "load_cereals"
+            step_key = "load_cereals.compute"
+2020-04-20 22:09:32 - dagster - ERROR - complex_pipeline - 90acc7f4-86db-4ebe-b34c-0ac54cc510a7 - STEP_FAILURE - Execution of step "load_cereals.compute" failed.
+            cls_name = "AttributeError"
+       error_message = "AttributeError: '_Environ' object has no attribute 'abspath'\n"
+               solid = "load_cereals"
+    solid_definition = "load_cereals"
+            step_key = "load_cereals.compute"
+
+AttributeError: '_Environ' object has no attribute 'abspath'
+
+  File "/usr/local/lib/python3.7/site-packages/dagster/core/errors.py", line 174, in user_code_error_boundary
+    yield
+  File "/usr/local/lib/python3.7/site-packages/dagster/core/execution/plan/execute.py", line 689, in _user_event_sequence_for_step_compute_fn
+    for event in gen:
+  File "/usr/local/lib/python3.7/site-packages/dagster/core/execution/plan/compute.py", line 93, in _execute_core_compute
+    for step_output in _yield_compute_results(compute_context, inputs, compute_fn):
+  File "/usr/local/lib/python3.7/site-packages/dagster/core/execution/plan/compute.py", line 64, in _yield_compute_results
+    for event in user_event_sequence:
+  File "/usr/local/lib/python3.7/site-packages/dagster/core/definitions/decorators.py", line 421, in compute
+    result = fn(context, **kwargs)
+  File "/opt/dagster/pipelines/dagster_examples/complex_pipeline.py", line 9, in load_cereals
+    dataset_path = os.path.join(os.environ.abspath(), "cereal.csv")
+

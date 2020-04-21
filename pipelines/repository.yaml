@@ -1,0 +1,6 @@
+repository:
+  module: dagster_examples.repos
+  fn: define_repo
+scheduler:
+  module: dagster_examples.scheduler
+  fn: cereal_schedules

@@ -1,0 +1,26 @@
+2020-04-21 17:23:21 - dagster - DEBUG - hello_cereal_pipeline - 5b91b1ee-64f6-4baf-a6bc-1f1b1333403f - STEP_START - Started execution of step "hello_cereal.compute".
+               solid = "hello_cereal"
+    solid_definition = "hello_cereal"
+            step_key = "hello_cereal.compute"
+2020-04-21 17:23:21 - dagster - ERROR - hello_cereal_pipeline - 5b91b1ee-64f6-4baf-a6bc-1f1b1333403f - STEP_FAILURE - Execution of step "hello_cereal.compute" failed.
+            cls_name = "AttributeError"
+       error_message = "AttributeError: 'DagsterLogManager' object has no attribute 'joinfo'\n"
+               solid = "hello_cereal"
+    solid_definition = "hello_cereal"
+            step_key = "hello_cereal.compute"
+
+AttributeError: 'DagsterLogManager' object has no attribute 'joinfo'
+
+  File "/usr/local/lib/python3.7/site-packages/dagster/core/errors.py", line 174, in user_code_error_boundary
+    yield
+  File "/usr/local/lib/python3.7/site-packages/dagster/core/execution/plan/execute.py", line 689, in _user_event_sequence_for_step_compute_fn
+    for event in gen:
+  File "/usr/local/lib/python3.7/site-packages/dagster/core/execution/plan/compute.py", line 93, in _execute_core_compute
+    for step_output in _yield_compute_results(compute_context, inputs, compute_fn):
+  File "/usr/local/lib/python3.7/site-packages/dagster/core/execution/plan/compute.py", line 64, in _yield_compute_results
+    for event in user_event_sequence:
+  File "/usr/local/lib/python3.7/site-packages/dagster/core/definitions/decorators.py", line 421, in compute
+    result = fn(context, **kwargs)
+  File "/opt/dagster/pipelines/dagster_examples/hello_cereal.py", line 12, in hello_cereal
+    context.log.joinfo(dataset_path)
+

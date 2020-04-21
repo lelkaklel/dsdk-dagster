@@ -1,0 +1,22 @@
+2020-04-21 17:29:56 - dagster - DEBUG - hello_cereal_pipeline - b4780ecb-4418-4a4d-8a67-13e696dbed27 - STEP_START - Started execution of step "hello_cereal.compute".
+               solid = "hello_cereal"
+    solid_definition = "hello_cereal"
+            step_key = "hello_cereal.compute"
+2020-04-21 17:29:56 - dagster - INFO - system - b4780ecb-4418-4a4d-8a67-13e696dbed27 - /opt/dagster/pipelines/dagster_examples/cereal.csv
+               solid = "hello_cereal"
+    solid_definition = "hello_cereal"
+            step_key = "hello_cereal.compute"
+2020-04-21 17:29:56 - dagster - INFO - system - b4780ecb-4418-4a4d-8a67-13e696dbed27 - Found 77 cereals
+               solid = "hello_cereal"
+    solid_definition = "hello_cereal"
+            step_key = "hello_cereal.compute"
+2020-04-21 17:29:56 - dagster - DEBUG - hello_cereal_pipeline - b4780ecb-4418-4a4d-8a67-13e696dbed27 - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+ event_specific_data = {"intermediate_materialization": null, "step_output_handle": ["hello_cereal.compute", "result"], "type_check_data": [true, "result", null, []]}
+               solid = "hello_cereal"
+    solid_definition = "hello_cereal"
+            step_key = "hello_cereal.compute"
+2020-04-21 17:29:56 - dagster - DEBUG - hello_cereal_pipeline - b4780ecb-4418-4a4d-8a67-13e696dbed27 - STEP_SUCCESS - Finished execution of step "hello_cereal.compute" in 24ms.
+ event_specific_data = {"duration_ms": 24.694878999980574}
+               solid = "hello_cereal"
+    solid_definition = "hello_cereal"
+            step_key = "hello_cereal.compute"

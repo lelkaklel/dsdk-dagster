@@ -1,0 +1,19 @@
+2020-04-20 19:22:21 - dagster - DEBUG - complex_pipeline - 2da4ff3b-f10f-414a-b4b1-8aebed6db4ae - STEP_START - Started execution of step "sort_by_calories.compute".
+               solid = "sort_by_calories"
+    solid_definition = "sort_by_calories"
+            step_key = "sort_by_calories.compute"
+2020-04-20 19:22:21 - dagster - DEBUG - complex_pipeline - 2da4ff3b-f10f-414a-b4b1-8aebed6db4ae - STEP_INPUT - Got input "cereals" of type "Any". (Type check passed).
+ event_specific_data = {"input_name": "cereals", "type_check_data": [true, "cereals", null, []]}
+               solid = "sort_by_calories"
+    solid_definition = "sort_by_calories"
+            step_key = "sort_by_calories.compute"
+2020-04-20 19:22:21 - dagster - DEBUG - complex_pipeline - 2da4ff3b-f10f-414a-b4b1-8aebed6db4ae - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+ event_specific_data = {"intermediate_materialization": null, "step_output_handle": ["sort_by_calories.compute", "result"], "type_check_data": [true, "result", null, []]}
+               solid = "sort_by_calories"
+    solid_definition = "sort_by_calories"
+            step_key = "sort_by_calories.compute"
+2020-04-20 19:22:21 - dagster - DEBUG - complex_pipeline - 2da4ff3b-f10f-414a-b4b1-8aebed6db4ae - STEP_SUCCESS - Finished execution of step "sort_by_calories.compute" in 8.25ms.
+ event_specific_data = {"duration_ms": 8.250893966760486}
+               solid = "sort_by_calories"
+    solid_definition = "sort_by_calories"
+            step_key = "sort_by_calories.compute"
