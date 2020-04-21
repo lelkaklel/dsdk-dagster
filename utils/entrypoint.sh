@@ -17,4 +17,7 @@ dagster schedule up
 dagster schedule restart --restart-all-running
 ####################################################################################################
 
+# sleep for 5 seconds to wait for postgres to finish setting up DB's
+sleep 5
+
 DAGSTER_HOME=/opt/dagster/dagster_home dagit -h 0.0.0.0 -p 3000

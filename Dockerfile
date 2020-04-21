@@ -8,7 +8,7 @@ RUN pip install dagit dagster_postgres dagster_cron ipdb
 
 WORKDIR /opt/dagster/startup
 
-COPY entrypoint.sh .
+COPY utils/entrypoint.sh .
 
 RUN chmod +x entrypoint.sh 
 
