@@ -3,7 +3,7 @@ services:
   dagster:
     container_name: dagster
     build: .
-    image: dagster
+    image: lelkaklel/dagster:latest
     ports: 
       - "3000:3000"
     volumes:
