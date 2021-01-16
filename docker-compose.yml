@@ -3,7 +3,6 @@ services:
   dagster:
     container_name: dagster
     build: .
-    image: pennsignals/dagster_dsdk:latest
     ports: 
       - "3000:3000"
     volumes:
